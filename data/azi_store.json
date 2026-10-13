@@ -1,0 +1,1479 @@
+{
+  "providers": {
+    "token_harbour": {
+      "id": "token_harbour",
+      "name": "Token Harbour",
+      "baseUrl": "https://tokenharbor.ai/v1",
+      "encryptedApiKey": "3cb29ba7fffaf3f1946f13f583bc9e77:15d2e4eca9c64fd1ca12404ad8f23feb:4e0ba5b6963bf17be8b057b60f4ff5001002a934bf0bf27a130416a05e1c9b89164dde751ae3310a53adb28749f035b5c6877f0ceb00fda1b4b2f4118c603f582127002013d16d167a",
+      "hasKey": true,
+      "maskedKey": "thk••••••••29-8",
+      "isEnabled": true,
+      "isDefault": true,
+      "lastTested": null,
+      "status": "online",
+      "lastError": null,
+      "latencyMs": null
+    },
+    "codecraft": {
+      "id": "codecraft",
+      "name": "CodeCraft API",
+      "baseUrl": "https://www.codecraftapi.com/v1",
+      "encryptedApiKey": "9a53f3e1fb0e323ee09fa188953a87f1:bfd35fce58b0367e87cea5124e958eed:0969ec865f6c3ea8e9385164d6ead8d0a384fdf818ad3a02bf64fc5e786d92460a5ec872651eeabb5bfc135650a8adbca373c7",
+      "hasKey": true,
+      "maskedKey": "cc_••••••••vsa1",
+      "isEnabled": true,
+      "isDefault": false,
+      "lastTested": "2026-10-12T20:00:43.975Z",
+      "status": "online",
+      "lastError": null,
+      "latencyMs": 409
+    },
+    "google_gemini": {
+      "id": "google_gemini",
+      "name": "Google Gemini (Built-in Server)",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+      "encryptedApiKey": "86548aadfc8c10a55ae99181e32b5d81:31e7cec54a95089be80cd092064992d0:d564dc0c95c8099c6cc16749d8a56cacfd51887920028debf1d4ec8015c6bf6d2d94942bcf62f79bb93b395ad53976c5886bed0389",
+      "hasKey": true,
+      "maskedKey": "AQ.••••••••KXlg",
+      "isEnabled": true,
+      "isDefault": false,
+      "lastTested": "2026-10-12T20:13:52.037Z",
+      "status": "online",
+      "lastError": null,
+      "latencyMs": 650
+    }
+  },
+  "models": [
+    {
+      "id": "opus-5.5",
+      "providerId": "codecraft",
+      "name": "Opus 5.5",
+      "isDefault": false,
+      "enabledForUsers": true,
+      "isFree": false,
+      "contextWindow": 200000,
+      "verified": true,
+      "pricingNote": "Paid Enterprise Tier (CodeCraft)",
+      "description": "Flagship deep reasoning architecture on CodeCraft for complex analysis and architecture.",
+      "actualModelId": "claude-opus-5.5",
+      "providerLabel": "Provider C — CodeCraft",
+      "sortOrder": 1,
+      "supportsVision": true
+    },
+    {
+      "id": "fable-5.1",
+      "actualModelId": "fable-5.1",
+      "providerId": "codecraft",
+      "providerLabel": "Provider C — CodeCraft",
+      "name": "Fable 5.1",
+      "isDefault": false,
+      "enabledForUsers": true,
+      "isFree": false,
+      "contextWindow": 128000,
+      "verified": true,
+      "pricingNote": "Paid Tier (CodeCraft)",
+      "description": "High-fidelity synthesis, narrative generation, and nuanced creative reasoning on CodeCraft.",
+      "sortOrder": 2,
+      "supportsVision": false
+    },
+    {
+      "id": "luna-5.6",
+      "actualModelId": "luna-5.6",
+      "providerId": "codecraft",
+      "providerLabel": "Provider C — CodeCraft",
+      "name": "Luna 5.6",
+      "isDefault": false,
+      "enabledForUsers": true,
+      "isFree": false,
+      "contextWindow": 128000,
+      "verified": true,
+      "pricingNote": "Paid Tier (CodeCraft)",
+      "description": "Ultra-fast multimodal reasoning and code comprehension on CodeCraft.",
+      "sortOrder": 3,
+      "supportsVision": true
+    },
+    {
+      "id": "deepseek-v4.1-flash:free",
+      "providerId": "token_harbour",
+      "name": "DeepSeek V4.1 Flash",
+      "isDefault": true,
+      "enabledForUsers": true,
+      "isFree": true,
+      "contextWindow": 64000,
+      "verified": true,
+      "pricingNote": "Verified Free Tier on Token Harbour",
+      "description": "High-speed reasoning model with verified free quota on Token Harbour.",
+      "actualModelId": "deepseek-v4.1-flash:free",
+      "providerLabel": "Provider T — Token Harbour",
+      "sortOrder": 4,
+      "supportsVision": false
+    },
+    {
+      "id": "mimo-2.6-flash:free",
+      "actualModelId": "mimo-2.6-flash:free",
+      "providerId": "token_harbour",
+      "providerLabel": "Provider T — Token Harbour",
+      "name": "MiMo 2.6 Flash",
+      "isDefault": false,
+      "enabledForUsers": true,
+      "isFree": true,
+      "contextWindow": 64000,
+      "verified": true,
+      "pricingNote": "Verified Free Tier on Token Harbour",
+      "description": "Lightweight, ultra-low latency model with verified free quota on Token Harbour.",
+      "sortOrder": 5,
+      "supportsVision": false
+    },
+    {
+      "id": "gemini-2.5-flash",
+      "providerId": "google_gemini",
+      "name": "Gemini 2.5 Flash",
+      "isDefault": false,
+      "enabledForUsers": true,
+      "isFree": true,
+      "contextWindow": 1000000,
+      "verified": true,
+      "pricingNote": "Built-in Server Engine",
+      "description": "Ultra-fast multimodal reasoning with 1M token context window.",
+      "actualModelId": "gemini-2.5-flash",
+      "providerLabel": "Built-in Server Engine",
+      "sortOrder": 6,
+      "supportsVision": true
+    },
+    {
+      "id": "deepseek-chat",
+      "providerId": "token_harbour",
+      "name": "DeepSeek Chat v3",
+      "isDefault": false,
+      "enabledForUsers": true,
+      "isFree": false,
+      "contextWindow": 64000,
+      "verified": true,
+      "pricingNote": "Standard Tier (Owner Account)",
+      "description": "Full-capability general conversational and code generation model."
+    },
+    {
+      "id": "claude-3-5-sonnet",
+      "providerId": "codecraft",
+      "name": "Claude 3.5 Sonnet",
+      "isDefault": false,
+      "enabledForUsers": true,
+      "isFree": false,
+      "contextWindow": 200000,
+      "verified": true,
+      "pricingNote": "Paid Standard Tier (CodeCraft)",
+      "description": "Balanced performance for coding, complex refactoring, and agentic workflows."
+    }
+  ],
+  "users": [
+    {
+      "id": "usr_owner_admin",
+      "email": "admin@azi.internal",
+      "name": "Azmal (AZI Owner)",
+      "role": "admin",
+      "passwordHash": "1b9335c5850143c4a932bb5cea965462bbd51741bbee4d5ffdfb0e6e6df651174ec1a357b23d704e489e50b25c3e540726fd7cf1dc1bd7c9ffee35f5f7b20c04",
+      "salt": "0759b25820b70a3eb812db948bf69c00",
+      "suspended": false,
+      "createdAt": "2026-10-12T19:33:27.417Z",
+      "totalRequests": 29,
+      "totalTokens": 2410,
+      "requestsToday": 29,
+      "tokensToday": 2410,
+      "lastActive": "2026-10-13T02:20:21.646Z"
+    },
+    {
+      "id": "usr_owner_direct",
+      "email": "paisehepaisehoyga@gmail.com",
+      "name": "Owner Admin",
+      "role": "admin",
+      "passwordHash": "1b9335c5850143c4a932bb5cea965462bbd51741bbee4d5ffdfb0e6e6df651174ec1a357b23d704e489e50b25c3e540726fd7cf1dc1bd7c9ffee35f5f7b20c04",
+      "salt": "0759b25820b70a3eb812db948bf69c00",
+      "suspended": false,
+      "createdAt": "2026-10-12T19:33:27.417Z",
+      "totalRequests": 0,
+      "totalTokens": 0,
+      "requestsToday": 0,
+      "tokensToday": 0,
+      "lastActive": "2026-10-12T19:33:27.417Z"
+    },
+    {
+      "id": "usr_friend_demo",
+      "email": "friend@azi.internal",
+      "name": "Guest / Friend",
+      "role": "user",
+      "passwordHash": "01a2a12e5734cc2892c276607793c88d34d2b2222612aec101cd79a8cd073118d22a5befabb54b7446fc62a9bfab9f856b1dd424a992a6d5679a1171e2d683ad",
+      "salt": "7e7e141f95a248eff8e45580f4f0239e",
+      "suspended": false,
+      "createdAt": "2026-10-12T19:33:27.417Z",
+      "totalRequests": 2,
+      "totalTokens": 925,
+      "requestsToday": 2,
+      "tokensToday": 925,
+      "lastActive": "2026-10-12T19:49:43.248Z"
+    },
+    {
+      "id": "usr_1791834843011_nzno3",
+      "email": "test@gay.com",
+      "name": "Test",
+      "role": "user",
+      "passwordHash": "4197700da72da02b7e4c24e88a668a9e2b4fd2665fcc2378f2a3c66f2c4f1d8578b75842b3aeeb8d478607b33d2a2fe38011a0a29c09b9f76cc1a0c127f0fe35",
+      "salt": "849c524ff5231e63d3560ea6ed3e7855",
+      "suspended": false,
+      "createdAt": "2026-10-12T19:54:03.011Z",
+      "totalRequests": 6,
+      "totalTokens": 1500,
+      "requestsToday": 6,
+      "tokensToday": 1500,
+      "lastActive": "2026-10-12T19:58:45.449Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "azi_sess_1791833624706_pwim76q8cin42xem",
+      "userId": "usr_owner_admin",
+      "createdAt": "2026-10-12T19:33:44.706Z",
+      "expiresAt": "2026-10-19T19:33:44.706Z"
+    },
+    {
+      "token": "azi_sess_1791834117195_lnil29ajl5xfma1l",
+      "userId": "usr_owner_admin",
+      "createdAt": "2026-10-12T19:41:57.195Z",
+      "expiresAt": "2026-10-19T19:41:57.195Z"
+    },
+    {
+      "token": "azi_sess_1791834160373_ti14h7af0nel1nko",
+      "userId": "usr_friend_demo",
+      "createdAt": "2026-10-12T19:42:40.373Z",
+      "expiresAt": "2026-10-19T19:42:40.373Z"
+    },
+    {
+      "token": "azi_sess_1791834162620_vajq46rcq10bxhqe",
+      "userId": "usr_owner_admin",
+      "createdAt": "2026-10-12T19:42:42.620Z",
+      "expiresAt": "2026-10-19T19:42:42.620Z"
+    },
+    {
+      "token": "azi_sess_1791834325638_2y4mn7ziumk37ov2",
+      "userId": "usr_friend_demo",
+      "createdAt": "2026-10-12T19:45:25.638Z",
+      "expiresAt": "2026-10-19T19:45:25.638Z"
+    },
+    {
+      "token": "azi_sess_1791834693456_y4a4q0g165c19fxc",
+      "userId": "usr_owner_admin",
+      "createdAt": "2026-10-12T19:51:33.456Z",
+      "expiresAt": "2026-10-19T19:51:33.456Z"
+    },
+    {
+      "token": "azi_sess_1791834693909_zxflof1t0n5leqxw",
+      "userId": "usr_owner_admin",
+      "createdAt": "2026-10-12T19:51:33.909Z",
+      "expiresAt": "2026-10-19T19:51:33.909Z"
+    },
+    {
+      "token": "azi_sess_1791834843012_09iqzj3ba0t4l7y0",
+      "userId": "usr_1791834843011_nzno3",
+      "createdAt": "2026-10-12T19:54:03.012Z",
+      "expiresAt": "2026-10-19T19:54:03.012Z"
+    },
+    {
+      "token": "azi_sess_1791835132074_zl94s2vcnblkgo1x",
+      "userId": "usr_owner_admin",
+      "createdAt": "2026-10-12T19:58:52.074Z",
+      "expiresAt": "2026-10-19T19:58:52.074Z"
+    },
+    {
+      "token": "azi_sess_1791835357733_t6eiyniscj3dh2hb",
+      "userId": "usr_friend_demo",
+      "createdAt": "2026-10-12T20:02:37.733Z",
+      "expiresAt": "2026-10-19T20:02:37.733Z"
+    },
+    {
+      "token": "azi_sess_1791835360052_4961zvpgnjeg1n6u",
+      "userId": "usr_owner_admin",
+      "createdAt": "2026-10-12T20:02:40.052Z",
+      "expiresAt": "2026-10-19T20:02:40.052Z"
+    },
+    {
+      "token": "azi_sess_1791835418930_o0v0f5s0dtbtktcr",
+      "userId": "usr_owner_admin",
+      "createdAt": "2026-10-12T20:03:38.930Z",
+      "expiresAt": "2026-10-19T20:03:38.930Z"
+    },
+    {
+      "token": "azi_sess_1791835913867_sec7u4vbypx1l78g",
+      "userId": "usr_owner_admin",
+      "createdAt": "2026-10-12T20:11:53.867Z",
+      "expiresAt": "2026-10-19T20:11:53.867Z"
+    },
+    {
+      "token": "azi_sess_1791858019502_a1e5h2imvzzxceg6",
+      "userId": "usr_owner_admin",
+      "createdAt": "2026-10-13T02:20:19.502Z",
+      "expiresAt": "2026-10-20T02:20:19.502Z"
+    },
+    {
+      "token": "azi_sess_1791858031240_fc74xzkuvlwghkfj",
+      "userId": "usr_owner_admin",
+      "createdAt": "2026-10-13T02:20:31.240Z",
+      "expiresAt": "2026-10-20T02:20:31.240Z"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "conv_1791857123014_91y8n",
+      "userId": "usr_owner_admin",
+      "title": "Hey",
+      "modelId": "mimo-2.6-flash:free",
+      "createdAt": "2026-10-13T02:05:23.014Z",
+      "updatedAt": "2026-10-13T02:20:20.840Z"
+    },
+    {
+      "id": "conv_1791836045798_qbp7d",
+      "userId": "usr_owner_admin",
+      "title": "What function is defined in this fil...",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T20:14:05.798Z",
+      "updatedAt": "2026-10-13T02:04:04.217Z"
+    },
+    {
+      "id": "conv_1791836038549_ad58w",
+      "userId": "usr_owner_admin",
+      "title": "Describe what you see in this attach...",
+      "modelId": "gemini-2.5-flash",
+      "createdAt": "2026-10-12T20:13:58.549Z",
+      "updatedAt": "2026-10-12T20:13:58.549Z"
+    },
+    {
+      "id": "conv_1791835364049_5jfcf",
+      "userId": "usr_owner_admin",
+      "title": "Gn",
+      "modelId": "mimo-2.6-flash:free",
+      "createdAt": "2026-10-12T20:02:44.049Z",
+      "updatedAt": "2026-10-12T20:06:55.442Z"
+    },
+    {
+      "id": "conv_1791835305744_xpth3",
+      "userId": "usr_owner_admin",
+      "title": "Hello",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T20:01:45.744Z",
+      "updatedAt": "2026-10-12T20:01:45.744Z"
+    },
+    {
+      "id": "conv_1791834852804_6dz3n",
+      "userId": "usr_1791834843011_nzno3",
+      "title": "Hwy",
+      "modelId": "luna-5.6",
+      "createdAt": "2026-10-12T19:54:12.804Z",
+      "updatedAt": "2026-10-12T19:58:45.164Z"
+    },
+    {
+      "id": "conv_1791834582919_14w8l",
+      "userId": "usr_friend_demo",
+      "title": "H",
+      "modelId": "gemini-2.5-flash",
+      "createdAt": "2026-10-12T19:49:42.919Z",
+      "updatedAt": "2026-10-12T19:49:42.919Z"
+    },
+    {
+      "id": "conv_1791834365042_z07iq",
+      "userId": "usr_friend_demo",
+      "title": "Make a code to edit change create de...",
+      "modelId": "claude-opus-5.5",
+      "createdAt": "2026-10-12T19:46:05.042Z",
+      "updatedAt": "2026-10-12T19:46:05.042Z"
+    },
+    {
+      "id": "conv_1791834131345_513d5",
+      "userId": "usr_owner_admin",
+      "title": "Hwllo",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T19:42:11.345Z",
+      "updatedAt": "2026-10-12T19:44:49.146Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_u_1791834131345",
+      "conversationId": "conv_1791834131345_513d5",
+      "role": "user",
+      "content": "Hwllo",
+      "modelId": "claude-opus-5.5",
+      "createdAt": "2026-10-12T19:42:11.345Z"
+    },
+    {
+      "id": "msg_u_1791834152594",
+      "conversationId": "conv_1791834131345_513d5",
+      "role": "user",
+      "content": "Hy",
+      "modelId": "gemini-2.5-flash",
+      "createdAt": "2026-10-12T19:42:32.594Z"
+    },
+    {
+      "id": "msg_u_1791834171316",
+      "conversationId": "conv_1791834131345_513d5",
+      "role": "user",
+      "content": "Hey",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T19:42:51.316Z"
+    },
+    {
+      "id": "msg_u_1791834173797",
+      "conversationId": "conv_1791834131345_513d5",
+      "role": "user",
+      "content": "H",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T19:42:53.797Z"
+    },
+    {
+      "id": "msg_u_1791834240694",
+      "conversationId": "conv_1791834131345_513d5",
+      "role": "user",
+      "content": "Hey",
+      "modelId": "deepseek-chat",
+      "createdAt": "2026-10-12T19:44:00.694Z"
+    },
+    {
+      "id": "msg_u_1791834247299",
+      "conversationId": "conv_1791834131345_513d5",
+      "role": "user",
+      "content": "Hwy",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T19:44:07.299Z"
+    },
+    {
+      "id": "msg_a_1791834251573",
+      "conversationId": "conv_1791834131345_513d5",
+      "role": "assistant",
+      "content": "Hey! 👋 Looks like a few typos slipped in. What can I help you with?",
+      "modelId": "deepseek-v4.1-flash:free",
+      "tokensEstimated": 65,
+      "createdAt": "2026-10-12T19:44:11.573Z"
+    },
+    {
+      "id": "msg_u_1791834258521",
+      "conversationId": "conv_1791834131345_513d5",
+      "role": "user",
+      "content": "How u doing",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T19:44:18.521Z"
+    },
+    {
+      "id": "msg_a_1791834261414",
+      "conversationId": "conv_1791834131345_513d5",
+      "role": "assistant",
+      "content": "I'm doing well, thanks for asking! 😊 How are you doing?",
+      "modelId": "deepseek-v4.1-flash:free",
+      "tokensEstimated": 98,
+      "createdAt": "2026-10-12T19:44:21.414Z"
+    },
+    {
+      "id": "msg_u_1791834289146",
+      "conversationId": "conv_1791834131345_513d5",
+      "role": "user",
+      "content": "Make a python code of making an bot that ping everyone at exactly 4hr gap",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T19:44:49.146Z"
+    },
+    {
+      "id": "msg_a_1791834320613",
+      "conversationId": "conv_1791834131345_513d5",
+      "role": "assistant",
+      "content": "Assuming you mean a **Discord bot**, here’s a Python example using `discord.py` that pings `@everyone` every 4 hours.\n\n> ⚠️ Only use this in servers where you have permission. Spamming `@everyone` can violate Discord’s Terms of Service and get your bot/server restricted.\n\n### Install\n```bash\npip install discord.py\n```\n\n### Code\n```python\nimport discord\nfrom discord.ext import tasks\n\nTOKEN = \"YOUR_BOT_TOKEN\"\nCHANNEL_ID = 123456789012345678  # Right-click channel -> Copy ID (enable Developer Mode)\n\nintents = discord.Intents.default()\nclient = discord.Client(intents=intents)\n\n\nasync def send_everyone_ping():\n    channel = client.get_channel(CHANNEL_ID)\n\n    if channel is None:\n        print(\"Channel not found. Check CHANNEL_ID.\")\n        return\n\n    try:\n        await channel.send(\n            \"@everyone\",\n            allowed_mentions=discord.AllowedMentions(everyone=True)\n        )\n        print(\"Pinged @everyone.\")\n    except discord.Forbidden:\n        print(\"Missing permissions: Send Messages and Mention Everyone.\")\n    except Exception as e:\n        print(f\"Error: {e}\")\n\n\n@tasks.loop(hours=4)\nasync def ping_loop():\n    await send_everyone_ping()\n\n\n@ping_loop.before_loop\nasync def before_ping_loop():\n    await client.wait_until_ready()\n\n\n@client.event\nasync def on_ready():\n    print(f\"Logged in as {client.user}\")\n\n    if not ping_loop.is_running():\n        # Uncomment the next line if you want to ping immediately on startup\n        # await send_everyone_ping()\n\n        ping_loop.start()\n\n\nclient.run(TOKEN)\n```\n\n### Setup\n1. Replace `YOUR_BOT_TOKEN` with your bot token.\n2. Replace `CHANNEL_ID` with the channel ID where you want the ping.\n3. Make sure the bot has:\n   - **Send Messages**\n   - **Mention @everyone, @here, and All Roles**\n4. Run the file.\n\n### Notes\n- The first ping happens **4 hours after the bot starts**.\n- If you restart the bot, the 4-hour timer resets.\n- If you want it to ping immediately on startup, uncomment the line:\n  ```python\n  # await send_everyone_ping()\n  ```\n- For a persistent schedule across restarts, you’d need to store the last ping time in a file or database and calculate the remaining time.",
+      "modelId": "deepseek-v4.1-flash:free",
+      "tokensEstimated": 671,
+      "createdAt": "2026-10-12T19:45:20.613Z"
+    },
+    {
+      "id": "msg_u_1791834365042",
+      "conversationId": "conv_1791834365042_z07iq",
+      "role": "user",
+      "content": "Make a code to edit change create delete an file continuous",
+      "modelId": "claude-opus-5.5",
+      "createdAt": "2026-10-12T19:46:05.042Z"
+    },
+    {
+      "id": "msg_a_1791834379658",
+      "conversationId": "conv_1791834365042_z07iq",
+      "role": "assistant",
+      "content": "Here is a simple `Python` code to `Create, Read, Edit and Delete` any file continuously - it will run in a loop until you exit:\n\n### Python Code - Continuous File Manager\n\nCreate a file `file_manager.py` and paste this code:\n\n```python\nimport os\nimport time\n\ndef create_file():\n    filename = input(\"Enter file name to create: \")\n    content = input(\"Enter content for the file: \")\n    try:\n        with open(filename, 'w') as f:\n            f.write(content)\n        print(f\"[CREATED] '{filename}' created successfully.\")\n    except Exception as e:\n        print(f\"Error: {e}\")\n\ndef read_file():\n    filename = input(\"Enter file name to read: \")\n    try:\n        with open(filename, 'r') as f:\n            print(\"\\n--- File Content ---\")\n            print(f.read())\n            print(\"--------------------\")\n    except FileNotFoundError:\n        print(f\"Error: '{filename}' not found.\")\n    except Exception as e:\n        print(f\"Error: {e}\")\n\ndef edit_file():\n    filename = input(\"Enter file name to edit/change: \")\n    if not os.path.exists(filename):\n        print(f\"Error: '{filename}' not found.\")\n        return\n    \n    print(\"1. Overwrite full file\")\n    print(\"2. Append to file\")\n    choice = input(\"Choose 1 or 2: \")\n\n    try:\n        if choice == '1':\n            new_content = input(\"Enter new content: \")\n            with open(filename, 'w') as f:\n                f.write(new_content)\n            print(f\"[EDITED] '{filename}' overwritten.\")\n        elif choice == '2':\n            add_content = input(\"Enter content to append: \")\n            with open(filename, 'a') as f:\n                f.write(\"\\n\" + add_content)\n            print(f\"[UPDATED] Content appended to '{filename}'.\")\n        else:\n            print(\"Invalid choice.\")\n    except Exception as e:\n        print(f\"Error: {e}\")\n\ndef delete_file():\n    filename = input(\"Enter file name to delete: \")\n    try:\n        os.remove(filename)\n        print(f\"[DELETED] '{filename}' deleted successfully.\")\n    except FileNotFoundError:\n        print(f\"Error: '{filename}' not found.\")\n    except Exception as e:\n        print(f\"Error: {e}\")\n\n# Continuous Loop\nwhile True:\n    print(\"\\n====== CONTINUOUS FILE MANAGER ======\")\n    print(\"1. Create File\")\n    print(\"2. Read File\")\n    print(\"3. Edit / Change File\")\n    print(\"4. Delete File\")\n    print(\"5. Exit\")\n    \n    choice = input(\"Enter your choice (1-5): \")\n\n    if choice == '1':\n        create_file()\n    elif choice == '2':\n        read_file()\n    elif choice == '3':\n        edit_file()\n    elif choice == '4':\n        delete_file()\n    elif choice == '5':\n        print(\"Exiting program...\")\n        break\n    else:\n        print(\"Invalid choice! Try again.\")\n```\n\n#### How to Run:\n1. Install Python\n2. Save the code as `file_manager.py`\n3. Run in terminal: `python file_manager.py`\n\n---\n\n### BONUS: Automatic Continuous Demo\nIf you want a file to be **automatically created -> edited -> deleted in a loop** without manual input:\n\n```python\nimport os\nimport time\n\nfilename = \"demo.txt\"\n\nwhile True:\n    # 1. CREATE\n    with open(filename, 'w') as f:\n        f.write(\"Hello World - Created\")\n    print(f\"[CREATED] {filename}\")\n    time.sleep(2)\n\n    # 2. EDIT / CHANGE\n    with open(filename, 'a') as f:\n        f.write(\"\\nThis line was edited at \" + time.ctime())\n    print(f\"[EDITED] {filename}\")\n    time.sleep(2)\n\n    # 3. DELETE\n    os.remove(filename)\n    print(f\"[DELETED] {filename}\")\n    time.sleep(2)\n\n    print(\"--- Restarting Cycle ---\\n\")\n```\n\nThis second code will run forever until you press `CTRL + C`.\n\nDo you want this code in **Python, Java, or Node.js**?",
+      "modelId": "claude-opus-5.5",
+      "tokensEstimated": 925,
+      "createdAt": "2026-10-12T19:46:19.658Z"
+    },
+    {
+      "id": "msg_u_1791834582919",
+      "conversationId": "conv_1791834582919_14w8l",
+      "role": "user",
+      "content": "H",
+      "modelId": "gemini-2.5-flash",
+      "createdAt": "2026-10-12T19:49:42.919Z"
+    },
+    {
+      "id": "msg_u_1791834775794",
+      "conversationId": "conv_1791834582919_14w8l",
+      "role": "user",
+      "content": "Lollll",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T19:52:55.794Z"
+    },
+    {
+      "id": "msg_a_1791834778764",
+      "conversationId": "conv_1791834582919_14w8l",
+      "role": "assistant",
+      "content": "Haha, hey! What’s up?",
+      "modelId": "deepseek-v4.1-flash:free",
+      "tokensEstimated": 22,
+      "createdAt": "2026-10-12T19:52:58.764Z"
+    },
+    {
+      "id": "msg_u_1791834789639",
+      "conversationId": "conv_1791834582919_14w8l",
+      "role": "user",
+      "content": "Hinglish me bat kr yr",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T19:53:09.639Z"
+    },
+    {
+      "id": "msg_a_1791834793890",
+      "conversationId": "conv_1791834582919_14w8l",
+      "role": "assistant",
+      "content": "Haan bhai, Hinglish me hi baat karte hain. Bol na, kya scene hai? Kya baat karni thi?",
+      "modelId": "deepseek-v4.1-flash:free",
+      "tokensEstimated": 64,
+      "createdAt": "2026-10-12T19:53:13.890Z"
+    },
+    {
+      "id": "msg_u_1791834802444",
+      "conversationId": "conv_1791834582919_14w8l",
+      "role": "user",
+      "content": "Kaisa h",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T19:53:22.444Z"
+    },
+    {
+      "id": "msg_a_1791834806284",
+      "conversationId": "conv_1791834582919_14w8l",
+      "role": "assistant",
+      "content": "Main badhiya bhai! Tu bata, kaisa hai? Kya chal raha hai? Sab mast?",
+      "modelId": "deepseek-v4.1-flash:free",
+      "tokensEstimated": 99,
+      "createdAt": "2026-10-12T19:53:26.284Z"
+    },
+    {
+      "id": "msg_u_1791834852804",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "user",
+      "content": "Hwy",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T19:54:12.804Z"
+    },
+    {
+      "id": "msg_a_1791834855800",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "assistant",
+      "content": "Hey! How can I help you today?",
+      "modelId": "deepseek-v4.1-flash:free",
+      "tokensEstimated": 16,
+      "createdAt": "2026-10-12T19:54:15.800Z"
+    },
+    {
+      "id": "msg_u_1791834864182",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "user",
+      "content": "Wt is minecraft",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T19:54:24.182Z"
+    },
+    {
+      "id": "msg_a_1791834871005",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "assistant",
+      "content": "Minecraft is a sandbox video game created by Mojang Studios. It was first released in 2011.\n\nIn simple terms:\n\n- You explore a huge, randomly generated world made of blocks.\n- You can **mine** blocks like dirt, stone, wood, and ores.\n- You can **craft** tools, weapons, and other items.\n- You can **build** almost anything, from houses to whole cities.\n- There are different game modes, like:\n  - **Survival**: gather resources, survive monsters, manage hunger.\n  - **Creative**: unlimited blocks, fly, build freely.\n  - **Adventure** and **Spectator**: special map/play modes.\n- You can play alone or with friends on multiplayer servers.\n- It’s available on PC, consoles, mobile, and more.\n\nSo basically: Minecraft is a blocky, open-world game where you can survive, explore, and build whatever you want.",
+      "modelId": "deepseek-v4.1-flash:free",
+      "tokensEstimated": 237,
+      "createdAt": "2026-10-12T19:54:31.005Z"
+    },
+    {
+      "id": "msg_u_1791834878071",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "user",
+      "content": "Who is the owner id azi",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T19:54:38.071Z"
+    },
+    {
+      "id": "msg_u_1791834898314",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "user",
+      "content": "Who's the owner of azi",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T19:54:58.314Z"
+    },
+    {
+      "id": "msg_a_1791834898411",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "assistant",
+      "content": "I’m not sure which “Azi” you mean — it could be a Minecraft player, a server, a Discord bot, a username, or something else.\n\nCan you clarify what **Azi** is?\n- If it’s a **Minecraft server**, check its website/Discord — the owner is usually listed there.\n- If it’s a **Discord bot**, use `/info` or `/botinfo`, or check the bot’s profile/website.\n- If you mean a **Minecraft player named Azi**, there are many with that name, so I’d need the platform/server to know which one.\n\nGive me a bit more context and I can help you find the owner or owner ID.",
+      "modelId": "deepseek-v4.1-flash:free",
+      "tokensEstimated": 400,
+      "createdAt": "2026-10-12T19:54:58.411Z"
+    },
+    {
+      "id": "msg_a_1791834924870",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "assistant",
+      "content": "I’m not sure which “Azi” you mean — that name could refer to a Minecraft server, a Discord bot, a YouTuber, or something else.\n\nIf you mean a **Discord bot named Azi**, its owner ID is usually shown by a bot-info command or in its support server. If you mean a **Minecraft server**, tell me the IP/website/full name. If you mean a **person/account**, tell me the platform.\n\nCan you give more context, like where you saw “Azi”?",
+      "modelId": "deepseek-v4.1-flash:free",
+      "tokensEstimated": 381,
+      "createdAt": "2026-10-12T19:55:24.870Z"
+    },
+    {
+      "id": "msg_u_1791834987537",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "user",
+      "content": "Naah which llm r u bss on",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T19:56:27.537Z"
+    },
+    {
+      "id": "msg_a_1791834997361",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "assistant",
+      "content": "I’m based on **DeepSeek’s large language model** — specifically **DeepSeek-V3**, made by **DeepSeek (深度求索)**.\n\nSo I’m not GPT-4, Claude, or Gemini. If you’re using me through some app or platform, the exact version/build can depend on that setup.",
+      "modelId": "deepseek-v4.1-flash:free",
+      "tokensEstimated": 466,
+      "createdAt": "2026-10-12T19:56:37.361Z"
+    },
+    {
+      "id": "msg_u_1791835125164",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "user",
+      "content": "Ur llm",
+      "modelId": "luna-5.6",
+      "createdAt": "2026-10-12T19:58:45.164Z"
+    },
+    {
+      "id": "msg_u_1791835162842",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "user",
+      "content": "Ht",
+      "modelId": "luna-5.6",
+      "createdAt": "2026-10-12T19:59:22.842Z"
+    },
+    {
+      "id": "msg_u_1791835194069",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "user",
+      "content": "Hwy",
+      "modelId": "luna-5.6",
+      "createdAt": "2026-10-12T19:59:54.069Z"
+    },
+    {
+      "id": "msg_a_1791835199477",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "assistant",
+      "content": "I am GPT-5.6 Luna developed by OpenAI.\n\nHey there! How can I help you today?",
+      "modelId": "luna-5.6",
+      "tokensEstimated": 666,
+      "createdAt": "2026-10-12T19:59:59.477Z"
+    },
+    {
+      "id": "msg_u_1791835234199",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "user",
+      "content": "Yoo",
+      "modelId": "mimo-2.6-flash:free",
+      "createdAt": "2026-10-12T20:00:34.199Z"
+    },
+    {
+      "id": "msg_u_1791835252719",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "user",
+      "content": "Yoo",
+      "modelId": "mimo-2.6-flash:free",
+      "createdAt": "2026-10-12T20:00:52.719Z"
+    },
+    {
+      "id": "msg_u_1791835264023",
+      "conversationId": "conv_1791834852804_6dz3n",
+      "role": "user",
+      "content": "Yoo",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T20:01:04.023Z"
+    },
+    {
+      "id": "msg_u_1791835305744",
+      "conversationId": "conv_1791835305744_xpth3",
+      "role": "user",
+      "content": "Hello",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T20:01:45.744Z"
+    },
+    {
+      "id": "msg_u_1791835364049",
+      "conversationId": "conv_1791835364049_5jfcf",
+      "role": "user",
+      "content": "Gn",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-12T20:02:44.049Z"
+    },
+    {
+      "id": "msg_u_1791835372901",
+      "conversationId": "conv_1791835364049_5jfcf",
+      "role": "user",
+      "content": "Gn",
+      "modelId": "deepseek-chat",
+      "createdAt": "2026-10-12T20:02:52.901Z"
+    },
+    {
+      "id": "msg_u_1791835615442",
+      "conversationId": "conv_1791835364049_5jfcf",
+      "role": "user",
+      "content": "Lol",
+      "modelId": "mimo-2.6-flash:free",
+      "createdAt": "2026-10-12T20:06:55.442Z"
+    },
+    {
+      "id": "msg_u_1791836038549",
+      "conversationId": "conv_1791836038549_ad58w",
+      "role": "user",
+      "content": "Describe what you see in this attached test image in one brief sentence.",
+      "modelId": "gemini-2.5-flash",
+      "createdAt": "2026-10-12T20:13:58.549Z",
+      "attachments": [
+        {
+          "id": "att_1791836038549_5440",
+          "name": "red_dot.png",
+          "size": 68,
+          "type": "image/png",
+          "category": "image",
+          "dataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="
+        }
+      ]
+    },
+    {
+      "id": "msg_a_1791836040053",
+      "conversationId": "conv_1791836038549_ad58w",
+      "role": "assistant",
+      "content": "This is a solid, uniform square of salmon-pink color.",
+      "modelId": "gemini-2.5-flash",
+      "tokensEstimated": 78,
+      "createdAt": "2026-10-12T20:14:00.053Z"
+    },
+    {
+      "id": "msg_u_1791836045798",
+      "conversationId": "conv_1791836045798_qbp7d",
+      "role": "user",
+      "content": "What function is defined in this file?",
+      "modelId": "gemini-2.5-flash",
+      "createdAt": "2026-10-12T20:14:05.798Z",
+      "attachments": [
+        {
+          "id": "att_1791836045798_hqrn",
+          "name": "math.py",
+          "size": 38,
+          "type": "text/x-python",
+          "category": "code"
+        }
+      ]
+    },
+    {
+      "id": "msg_a_1791836046920",
+      "conversationId": "conv_1791836045798_qbp7d",
+      "role": "assistant",
+      "content": "The file defines a function named `add(a, b)` that returns the sum of its two arguments. \n\nI am AZI — AZMAL INTELLIGENCE, created by Azmal.",
+      "modelId": "gemini-2.5-flash",
+      "tokensEstimated": 80,
+      "createdAt": "2026-10-12T20:14:06.920Z"
+    },
+    {
+      "id": "msg_u_1791857044217",
+      "conversationId": "conv_1791836045798_qbp7d",
+      "role": "user",
+      "content": "Hey",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-13T02:04:04.217Z",
+      "attachments": []
+    },
+    {
+      "id": "msg_a_1791857049776",
+      "conversationId": "conv_1791836045798_qbp7d",
+      "role": "assistant",
+      "content": "Hey! I’m AZI — AZMAL INTELLIGENCE, created by Azmal.\n\nOne correction: I don’t actually have the file contents from your earlier question, so I can’t accurately say which function is defined in it. If you paste the code or upload the file, I’ll identify the function for you.",
+      "modelId": "deepseek-v4.1-flash:free",
+      "tokensEstimated": 171,
+      "createdAt": "2026-10-13T02:04:09.776Z"
+    },
+    {
+      "id": "msg_u_1791857123014",
+      "conversationId": "conv_1791857123014_91y8n",
+      "role": "user",
+      "content": "Hey",
+      "modelId": "mimo-2.6-flash:free",
+      "createdAt": "2026-10-13T02:05:23.014Z",
+      "attachments": []
+    },
+    {
+      "id": "msg_u_1791857135345",
+      "conversationId": "conv_1791857123014_91y8n",
+      "role": "user",
+      "content": "Hello",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-13T02:05:35.345Z",
+      "attachments": []
+    },
+    {
+      "id": "msg_a_1791857138299",
+      "conversationId": "conv_1791857123014_91y8n",
+      "role": "assistant",
+      "content": "Hey! How can I help you today?",
+      "modelId": "deepseek-v4.1-flash:free",
+      "tokensEstimated": 33,
+      "createdAt": "2026-10-13T02:05:38.299Z"
+    },
+    {
+      "id": "msg_u_1791857354862",
+      "conversationId": "conv_1791857123014_91y8n",
+      "role": "user",
+      "content": "Lollllll",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-13T02:09:14.862Z",
+      "attachments": []
+    },
+    {
+      "id": "msg_a_1791857358603",
+      "conversationId": "conv_1791857123014_91y8n",
+      "role": "assistant",
+      "content": "😄 What's up?",
+      "modelId": "deepseek-v4.1-flash:free",
+      "tokensEstimated": 58,
+      "createdAt": "2026-10-13T02:09:18.603Z"
+    },
+    {
+      "id": "msg_u_1791857840553",
+      "conversationId": "conv_1791857123014_91y8n",
+      "role": "user",
+      "content": "Hey u know I like butter flies",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-13T02:17:20.553Z",
+      "attachments": []
+    },
+    {
+      "id": "msg_a_1791857845887",
+      "conversationId": "conv_1791857123014_91y8n",
+      "role": "assistant",
+      "content": "I didn’t know before, but now I do — you like butterflies 🦋\n\nThey’re beautiful. Do you have a favorite kind, or a favorite butterfly memory?",
+      "modelId": "deepseek-v4.1-flash:free",
+      "tokensEstimated": 121,
+      "createdAt": "2026-10-13T02:17:25.887Z"
+    },
+    {
+      "id": "msg_u_1791857989839",
+      "conversationId": "conv_1791857123014_91y8n",
+      "role": "user",
+      "content": "Which llm are u",
+      "modelId": "deepseek-v4.1-flash:free",
+      "createdAt": "2026-10-13T02:19:49.839Z",
+      "attachments": []
+    },
+    {
+      "id": "msg_a_1791857994367",
+      "conversationId": "conv_1791857123014_91y8n",
+      "role": "assistant",
+      "content": "I’m **AZI — AZMAL INTELLIGENCE**, created by Azmal. I don’t present myself as a specific third-party LLM; I run on infrastructure configured by Azmal. 🦋",
+      "modelId": "deepseek-v4.1-flash:free",
+      "tokensEstimated": 184,
+      "createdAt": "2026-10-13T02:19:54.367Z"
+    },
+    {
+      "id": "msg_u_1791858020840",
+      "conversationId": "conv_1791857123014_91y8n",
+      "role": "user",
+      "content": "Hey",
+      "modelId": "mimo-2.6-flash:free",
+      "createdAt": "2026-10-13T02:20:20.840Z",
+      "attachments": []
+    }
+  ],
+  "fairUsage": {
+    "maxRequestsPerMinute": 20,
+    "dailyUserMessageLimit": 120,
+    "dailyUserTokenCap": 300000,
+    "enforceLimits": true,
+    "maintenanceMode": false,
+    "systemAnnouncement": "Welcome to AZI Central API. Infrastructure managed by Owner."
+  },
+  "logs": [
+    {
+      "id": "log_1791858021646_dpl5",
+      "timestamp": "2026-10-13T02:20:21.646Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "mimo-2.6-flash:free",
+      "promptTokens": 204,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 804,
+      "status": "error",
+      "errorMessage": "All configured API keys for Token Harbour failed (1 key(s) tried). Last error: [Token Harbour] HTTP 404: Model 'mimo-2.6-flash' is not available. Browse models at https://tokenharbor.ai/dashboard/models or call GET /v1/models for the live list.. Please retry or add/refresh API keys in the Owner Admin Dashboard.",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791857994368_dlwb",
+      "timestamp": "2026-10-13T02:19:54.368Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 145,
+      "completionTokens": 39,
+      "totalTokens": 184,
+      "durationMs": 4526,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791857845889_62tb",
+      "timestamp": "2026-10-13T02:17:25.889Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 86,
+      "completionTokens": 36,
+      "totalTokens": 121,
+      "durationMs": 5333,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791857358604_6020",
+      "timestamp": "2026-10-13T02:09:18.604Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 55,
+      "completionTokens": 4,
+      "totalTokens": 58,
+      "durationMs": 3740,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791857138300_yycy",
+      "timestamp": "2026-10-13T02:05:38.300Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 26,
+      "completionTokens": 8,
+      "totalTokens": 33,
+      "durationMs": 2953,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791857123738_3js7",
+      "timestamp": "2026-10-13T02:05:23.738Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "mimo-2.6-flash:free",
+      "promptTokens": 13,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 723,
+      "status": "error",
+      "errorMessage": "[Token Harbour] HTTP 404: Model 'mimo-2.6-flash' is not available. Browse models at https://tokenharbor.ai/dashboard/models or call GET /v1/models for the live list.",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791857049777_8lhi",
+      "timestamp": "2026-10-13T02:04:09.777Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 102,
+      "completionTokens": 69,
+      "totalTokens": 171,
+      "durationMs": 5558,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791836046921_o37t",
+      "timestamp": "2026-10-12T20:14:06.921Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "google_gemini",
+      "modelId": "gemini-2.5-flash",
+      "promptTokens": 85,
+      "completionTokens": 35,
+      "totalTokens": 80,
+      "durationMs": 1121,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791836040054_9w9t",
+      "timestamp": "2026-10-12T20:14:00.054Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "google_gemini",
+      "modelId": "gemini-2.5-flash",
+      "promptTokens": 88,
+      "completionTokens": 14,
+      "totalTokens": 78,
+      "durationMs": 1503,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791835616101_66px",
+      "timestamp": "2026-10-12T20:06:56.101Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "mimo-2.6-flash:free",
+      "promptTokens": 24,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 658,
+      "status": "error",
+      "errorMessage": "[Token Harbour] HTTP 402: Your Token Harbor balance is at $0. Top up at https://tokenharbor.ai/dashboard to keep using paid models.",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791835374515_tbfz",
+      "timestamp": "2026-10-12T20:02:54.515Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-chat",
+      "promptTokens": 8,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 1613,
+      "status": "error",
+      "errorMessage": "[Token Harbour] HTTP 404: Model 'deepseek-chat' is not available. Browse models at https://tokenharbor.ai/dashboard/models or call GET /v1/models for the live list.",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791835364695_d8tu",
+      "timestamp": "2026-10-12T20:02:44.695Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 8,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 646,
+      "status": "error",
+      "errorMessage": "[Token Harbour] HTTP 402: Your Token Harbor balance is at $0. Top up at https://tokenharbor.ai/dashboard to keep using paid models.",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791835306388_wziu",
+      "timestamp": "2026-10-12T20:01:46.388Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 9,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 643,
+      "status": "error",
+      "errorMessage": "[Token Harbour] HTTP 402: Your Token Harbor balance is at $0. Top up at https://tokenharbor.ai/dashboard to keep using paid models.",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791835264867_kkc1",
+      "timestamp": "2026-10-12T20:01:04.867Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 691,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 843,
+      "status": "error",
+      "errorMessage": "[Token Harbour] HTTP 402: Your Token Harbor balance is at $0. Top up at https://tokenharbor.ai/dashboard to keep using paid models.",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791835253454_c0m6",
+      "timestamp": "2026-10-12T20:00:53.454Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "mimo-2.6-flash:free",
+      "promptTokens": 683,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 734,
+      "status": "error",
+      "errorMessage": "[Token Harbour] HTTP 402: Your Token Harbor balance is at $0. Top up at https://tokenharbor.ai/dashboard to keep using paid models.",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791835235227_kuty",
+      "timestamp": "2026-10-12T20:00:35.227Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "mimo-2.6-flash:free",
+      "promptTokens": 683,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 1028,
+      "status": "error",
+      "errorMessage": "[Token Harbour] HTTP 402: Your Token Harbor balance is at $0. Top up at https://tokenharbor.ai/dashboard to keep using paid models.",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791835199477_h5tf",
+      "timestamp": "2026-10-12T19:59:59.477Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "codecraft",
+      "modelId": "luna-5.6",
+      "promptTokens": 647,
+      "completionTokens": 19,
+      "totalTokens": 666,
+      "durationMs": 5407,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791835163467_i728",
+      "timestamp": "2026-10-12T19:59:23.467Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "codecraft",
+      "modelId": "luna-5.6",
+      "promptTokens": 639,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 624,
+      "status": "error",
+      "errorMessage": "[CodeCraft API] HTTP 404: The model 'luna-5.6' does not exist or you do not have access to it.",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791835125449_n5cr",
+      "timestamp": "2026-10-12T19:58:45.449Z",
+      "userId": "usr_1791834843011_nzno3",
+      "userEmail": "test@gay.com",
+      "providerId": "codecraft",
+      "modelId": "luna-5.6",
+      "promptTokens": 632,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 284,
+      "status": "error",
+      "errorMessage": "[CodeCraft API] HTTP 404: The model 'luna-5.6' does not exist or you do not have access to it.",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834997362_kvj8",
+      "timestamp": "2026-10-12T19:56:37.362Z",
+      "userId": "usr_1791834843011_nzno3",
+      "userEmail": "test@gay.com",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 404,
+      "completionTokens": 62,
+      "totalTokens": 466,
+      "durationMs": 9823,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834924870_tnmq",
+      "timestamp": "2026-10-12T19:55:24.870Z",
+      "userId": "usr_1791834843011_nzno3",
+      "userEmail": "test@gay.com",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 275,
+      "completionTokens": 107,
+      "totalTokens": 381,
+      "durationMs": 26555,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834898412_dsfd",
+      "timestamp": "2026-10-12T19:54:58.412Z",
+      "userId": "usr_1791834843011_nzno3",
+      "userEmail": "test@gay.com",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 262,
+      "completionTokens": 138,
+      "totalTokens": 400,
+      "durationMs": 20339,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834871006_lbiv",
+      "timestamp": "2026-10-12T19:54:31.006Z",
+      "userId": "usr_1791834843011_nzno3",
+      "userEmail": "test@gay.com",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 36,
+      "completionTokens": 202,
+      "totalTokens": 237,
+      "durationMs": 6823,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834855800_kuox",
+      "timestamp": "2026-10-12T19:54:15.800Z",
+      "userId": "usr_1791834843011_nzno3",
+      "userEmail": "test@gay.com",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 9,
+      "completionTokens": 8,
+      "totalTokens": 16,
+      "durationMs": 2996,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834806285_y4xy",
+      "timestamp": "2026-10-12T19:53:26.285Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 82,
+      "completionTokens": 17,
+      "totalTokens": 99,
+      "durationMs": 3839,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834793890_0atl",
+      "timestamp": "2026-10-12T19:53:13.890Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 43,
+      "completionTokens": 22,
+      "totalTokens": 64,
+      "durationMs": 4250,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834778765_3dv7",
+      "timestamp": "2026-10-12T19:52:58.765Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 17,
+      "completionTokens": 6,
+      "totalTokens": 22,
+      "durationMs": 2969,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834583248_fzc4",
+      "timestamp": "2026-10-12T19:49:43.248Z",
+      "userId": "usr_friend_demo",
+      "userEmail": "friend@azi.internal",
+      "providerId": "google_gemini",
+      "modelId": "gemini-2.5-flash",
+      "promptTokens": 8,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 328,
+      "status": "error",
+      "errorMessage": "Gemini Provider error: {\"error\":{\"message\":\"{\\n  \\\"error\\\": {\\n    \\\"code\\\": 404,\\n    \\\"message\\\": \\\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).\\\",\\n    \\\"status\\\": \\\"NOT_FOUND\\\"\\n  }\\n}\\n\",\"code\":404,\"status\":\"Not Found\"}}",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834379659_z4u4",
+      "timestamp": "2026-10-12T19:46:19.659Z",
+      "userId": "usr_friend_demo",
+      "userEmail": "friend@azi.internal",
+      "providerId": "codecraft",
+      "modelId": "claude-opus-5.5",
+      "promptTokens": 23,
+      "completionTokens": 902,
+      "totalTokens": 925,
+      "durationMs": 14616,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834320614_2bl9",
+      "timestamp": "2026-10-12T19:45:20.614Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 132,
+      "completionTokens": 540,
+      "totalTokens": 671,
+      "durationMs": 31466,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834261414_l1v8",
+      "timestamp": "2026-10-12T19:44:21.414Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 84,
+      "completionTokens": 14,
+      "totalTokens": 98,
+      "durationMs": 2893,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834251574_wj0x",
+      "timestamp": "2026-10-12T19:44:11.574Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 48,
+      "completionTokens": 17,
+      "totalTokens": 65,
+      "durationMs": 4272,
+      "status": "success",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834241548_gi64",
+      "timestamp": "2026-10-12T19:44:01.548Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-chat",
+      "promptTokens": 40,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 852,
+      "status": "error",
+      "errorMessage": "[Token Harbour] HTTP 404: Model 'deepseek-chat' is not available. Browse models at https://tokenharbor.ai/dashboard/models or call GET /v1/models for the live list.",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834173797_xxuo",
+      "timestamp": "2026-10-12T19:42:53.797Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 32,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 0,
+      "status": "error",
+      "errorMessage": "Provider \"Token Harbour\" API Key is not configured. As the owner, please go to the Admin Dashboard to input your Token Harbour API key.",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834171317_qq8m",
+      "timestamp": "2026-10-12T19:42:51.317Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "token_harbour",
+      "modelId": "deepseek-v4.1-flash:free",
+      "promptTokens": 25,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 0,
+      "status": "error",
+      "errorMessage": "Provider \"Token Harbour\" API Key is not configured. As the owner, please go to the Admin Dashboard to input your Token Harbour API key.",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834152993_zu64",
+      "timestamp": "2026-10-12T19:42:32.993Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "google_gemini",
+      "modelId": "gemini-2.5-flash",
+      "promptTokens": 17,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 398,
+      "status": "error",
+      "errorMessage": "Gemini Provider error: {\"error\":{\"message\":\"{\\n  \\\"error\\\": {\\n    \\\"code\\\": 404,\\n    \\\"message\\\": \\\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).\\\",\\n    \\\"status\\\": \\\"NOT_FOUND\\\"\\n  }\\n}\\n\",\"code\":404,\"status\":\"Not Found\"}}",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "log_1791834131346_atzu",
+      "timestamp": "2026-10-12T19:42:11.346Z",
+      "userId": "usr_owner_admin",
+      "userEmail": "admin@azi.internal",
+      "providerId": "codecraft",
+      "modelId": "claude-opus-5.5",
+      "promptTokens": 9,
+      "completionTokens": 0,
+      "totalTokens": 0,
+      "durationMs": 1,
+      "status": "error",
+      "errorMessage": "Provider \"CodeCraft API\" API Key is not configured. As the owner, please go to the Admin Dashboard to input your CodeCraft API API key.",
+      "ip": "127.0.0.1"
+    }
+  ],
+  "apiKeys": [
+    {
+      "id": "key_token_harbour_1791858001281_migrated",
+      "providerId": "token_harbour",
+      "label": "Token Harbour Key 1 (Primary)",
+      "maskedKey": "thk••••••••29-8",
+      "encryptedKey": "3cb29ba7fffaf3f1946f13f583bc9e77:15d2e4eca9c64fd1ca12404ad8f23feb:4e0ba5b6963bf17be8b057b60f4ff5001002a934bf0bf27a130416a05e1c9b89164dde751ae3310a53adb28749f035b5c6877f0ceb00fda1b4b2f4118c603f582127002013d16d167a",
+      "isEnabled": true,
+      "isActive": true,
+      "requestCount": 0,
+      "lastUsedAt": null,
+      "lastTestedAt": "2026-10-13T02:20:21.645Z",
+      "status": "error",
+      "lastError": "Model 'mimo-2.6-flash' is not available. Browse models at https://tokenharbor.ai/dashboard/models or call GET /v1/models for the live list.",
+      "latencyMs": null,
+      "createdAt": "2026-10-13T02:20:01.281Z"
+    },
+    {
+      "id": "key_codecraft_1791858001281_migrated",
+      "providerId": "codecraft",
+      "label": "CodeCraft API Key 1 (Primary)",
+      "maskedKey": "cc_••••••••vsa1",
+      "encryptedKey": "9a53f3e1fb0e323ee09fa188953a87f1:bfd35fce58b0367e87cea5124e958eed:0969ec865f6c3ea8e9385164d6ead8d0a384fdf818ad3a02bf64fc5e786d92460a5ec872651eeabb5bfc135650a8adbca373c7",
+      "isEnabled": true,
+      "isActive": true,
+      "requestCount": 0,
+      "lastUsedAt": null,
+      "lastTestedAt": "2026-10-12T20:00:43.975Z",
+      "status": "healthy",
+      "lastError": null,
+      "latencyMs": 409,
+      "createdAt": "2026-10-13T02:20:01.281Z"
+    }
+  ]
+}
